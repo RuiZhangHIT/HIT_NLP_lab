@@ -1,0 +1,8 @@
+gen_dic.py用于根据199802.txt生成词典unigram.dic和bigram.dic并存入io_files
+stage_5.py实现2元语言模型，分词结果存入io_files下的seg_LM.txt
+hmm.py在2元语言模型基础上实现未登录词识别，分词结果存入io_files下的seg_LM.txt
+
+
+目前代码默认使用199801_sent.txt进行分词
+若要测试test.txt的纯2元语法分词效果，将其放入io_files目录下并更改stage_5.py中63行处的文件名即可
+若要测试test.txt的带未登录词识别的2元语法分词效果，将其放入io_files目录下并更改hmm.py中64行处的文件名即可
